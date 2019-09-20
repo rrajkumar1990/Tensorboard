@@ -51,7 +51,7 @@ def test_model(batch_size,x_data,y_true, path):
     
     #for seeing a scalar value in our tensorboard we need provide a variable name and mention which
     #tensor it belongs to in our case its "error" tensor so attaching that to our scalar variab;e
-    mse_summary = tf.summary.scalar(name="linear rmse", tensor=error)
+    mse_summary = tf.summary.scalar(name="linear mse", tensor=error)
     
     
     log_dir=path
